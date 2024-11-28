@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Min Hemsida</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f4f4f4;
+        }
+        
+        header {
+            background-color: #333;
+            color: white;
+            width: 100%;
+            padding: 10px 0;
+            text-align: center;
+        }
+        
+        div {
+            background-color: gray;
+            width: 100%;
+            height: 50px;
+            align-content: center;
+            vertical-align: bottom;
+        }
+        
+        .bilder {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px 0;
+            gap: 30px;
+        }
+        
+        .bilder img {
+            max-width: 300px;
+            max-height: 200px;
+            border: 2px solid #333;
+            border-radius: 5px;
+        }
+        
+        .bilder2 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px 0;
+            gap: 50px;
+        }
+        
+        .bilder2 img {
+            max-width: 600px;
+            max-height: 400px;
+            border: 2px solid #333;
+            border-radius: 5px;
+        }
+        
+        .text p {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #333;
+            padding: 10px 20px 10px 10px;
+            width: 90%;
+            max-width: 800px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+    <script>
+        img = document.getElementById("img1");
+
+        function enlargeImg() {
+            img.style.transform = "scale(1.5)";
+            img.style.transition = "transform 0.25s ease";
+        }
+
+        // Function to reset image size
+        function resetImg() {
+            img.style.transform = "scale(1)";
+            img.style.transition = "transform 0.25s ease";
+        }
+    </script>
+
+
+
+</head>
+
+<body>
+    <header>
+        <h1>Gentlemanens delikates</h1>
+    </header>
+    <section class="bilder">
+        <!-- Lägg till bilder genom att ersätta URLerna nedan -->
+        <img onclick="enlargeImg()" id="img1" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.whitehouse.gov%2Fwp-content%2Fuploads%2F2021%2F01%2F44_barack_obama.jpg&f=1&nofb=1&ipt=556c49bb155e24baffe77b61c770cf7e0a2508194099f5e161efc7ccf111a9bb&ipo=images"
+            alt="Bild 1">
+
+        <img src=https://files.oaiusercontent.com/file-54jpzwSeeR95KwAtKYPtHj?se=2024-11-25T08%3A41%3A34Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D12a50aa1-a001-47eb-a919-71e607d0b6ef.webp&sig=KGIA4mVqrW66iUBLf5jsuyMsbd5gvODuAPVcQjaVzBc%3D
+            alt="Bild 2 ">
+        <img src="https://files.oaiusercontent.com/file-54jpzwSeeR95KwAtKYPtHj?se=2024-11-25T08%3A41%3A34Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D12a50aa1-a001-47eb-a919-71e607d0b6ef.webp&sig=KGIA4mVqrW66iUBLf5jsuyMsbd5gvODuAPVcQjaVzBc%3D
+            " alt="Bild 3 ">
+
+    </section>
+    <section class="text ">
+        <p>
+            Är du en gentleman/kvinna som vill göra nästa finmidag eller rävjakt speciel? Använd i så fall våran ekologiska svenska surströmming med flertal sofistikerad smakar för den exlenta njutaren
+        </p>
+    </section>
+    <section class="bilder2 ">
+        <img id="bild1" src="https://files.oaiusercontent.com/file-54jpzwSeeR95KwAtKYPtHj?se=2024-11-25T08%3A41%3A34Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D12a50aa1-a001-47eb-a919-71e607d0b6ef.webp&sig=KGIA4mVqrW66iUBLf5jsuyMsbd5gvODuAPVcQjaVzBc%3D "
+            alt="Bild 1 " id="bild1 ">
+        <img src=https://files.oaiusercontent.com/file-54jpzwSeeR95KwAtKYPtHj?se=2024-11-25T08%3A41%3A34Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D12a50aa1-a001-47eb-a919-71e607d0b6ef.webp&sig=KGIA4mVqrW66iUBLf5jsuyMsbd5gvODuAPVcQjaVzBc%3D
+            alt="Bild 2 ">
+
+    </section>
+    <div class="div"></div>
+</body>
+
+</html>
